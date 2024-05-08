@@ -1,0 +1,16 @@
+Dockerfilecode:
+FROM node:Alpine 
+FROM . /docprac
+CMD node /docprac/Ayush.js
+
+
+Dockercommands to run:
+docker -v
+docker pull OpenJDK
+docker run --name Ayush -it -d OpenJDK
+docker exec -it JAVA jshell
+
+
+other commands
+docker build -t docprac .
+
